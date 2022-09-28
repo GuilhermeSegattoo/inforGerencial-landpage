@@ -16,7 +16,8 @@ const Home: NextPage = () => {
       <main >
         <div className="bg-primaryGradient h-screen flex flex-col">
           <Header />
-          <div className="relative grid mx-16 my-5 lg:grid-cols-2 lg:mx-40 lg:my-32 items-center text-white  justify-between">
+          <div className="relative grid px-16 py-5 lg:grid-cols-2 lg:px-24 lg:py-24 lg:mx-32 lg:mt-10 items-center text-white justify-between
+            bg-zinc-400/5 rounded-lg">
             <div className="flex-initial order-last md:order-none">
               <h1 className="bg-textGradient text-5xl md:text-6xl lg:text-7xl text-clip 
               text-center md:text-justify
