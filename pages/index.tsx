@@ -22,18 +22,18 @@ const Home: NextPage = () => {
                 <div className="order-last md:order-none">
                   <h1 className="bg-textGradient text-5xl md:text-6xl lg:text-7xl text-clip 
                   text-center md:text-justify
-                  text-transparent bg-clip-text my-5">
+                  text-transparent bg-clip-text my-5 animate-fade ">
                     Em Breve
                   </h1>
-                  <p className="text-white text-xl text-center md:text-justify">A goDev nasceu do espirito e da vontade de empreender dos estudantes de computação da Universidade Federal Rural do Semiárido, e de levar vocês em uma jornada pensada para conduzir suas mentes em um processo de construção visual e tecnológica, dentro do espectro do desenvolvimento digital. Os olhos estão abrindo, e a você não vai querer perder esse nascimento.</p>
+                  <p className="text-white text-xl text-center md:text-justify animate-fade">A goDev nasceu do espirito e da vontade de empreender dos estudantes de computação da Universidade Federal Rural do Semiárido, e de levar vocês em uma jornada pensada para conduzir suas mentes em um processo de construção visual e tecnológica, dentro do espectro do desenvolvimento digital. Os olhos estão abrindo, e a você não vai querer perder esse nascimento.</p>
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center animate-fade">
                   {/*<img src="./assets/fontImage.png" width={400} alt=""/>*/}
                   <img src="./assets/cabeca.png" width={400} className="lg:h-[659px] lg:w-[755px] -z-10 lg:absolute" alt="" />
                 </div>
               </div>
             </div>
-            <Footer />
+          <Footer />
         </div>
       </main>
 
