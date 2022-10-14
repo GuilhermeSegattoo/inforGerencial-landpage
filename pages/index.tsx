@@ -1,10 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect } from 'react';
 
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    document.getElementById("image-block")!!.style.opacity = '1';
+    document.getElementById("title-block")!!.style.opacity = '1';
+    document.getElementById("text-block")!!.style.opacity = '1';
+  }, [])
+    
   return (
     <div className=''>
       <Head>
@@ -16,27 +24,32 @@ const Home: NextPage = () => {
       <main className='relative min-h-screen'>
         <div className="flex flex-col relative min-h-screen h-full">
           <Header />
-          <div style={{height:'calc(100vh - 80px)'}}>
             <div className='lg:px-32 lg:py-10 lg:h-5/6 block'>
-              <div className="relative grid px-16 py-5 lg:grid-cols-2 lg:px-24 lg:py-24 items-center text-white justify-between
+              <div className=" max-w-max relative grid px-16 py-5 lg:grid-cols-2 lg:px-24 lg:py-24 items-center text-white justify-between
                 bg-zinc-400/5 rounded-lg h-full ">
                 <div className="order-last md:order-none">
-                  <h1 className="bg-textGradient text-5xl md:text-6xl lg:text-7xl text-clip 
+                  <h1 id="title-block" className="bg-textGradient text-5xl md:text-6xl lg:text-7xl text-clip 
                   text-center md:text-justify
-                  text-transparent bg-clip-text my-5">
+                  text-transparent bg-clip-text my-5 
+                  transition-opacity delay-[1s] lg:delay-[0.5s] ease-out duration-1000 opacity-0">
                     Em Breve
                   </h1>
-                  <p className="text-white text-xl text-center md:text-justify">Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, 
-                    nisi eros vermeio.Nec orci ornare consequat. Praesent lacinia ultrices consectetur.</p>
+                  <p id="text-block" className="text-white text-xl text-center md:text-justify 
+                    transition-opacity delay-[1.5s] lg:delay-[1s] ease-out duration-1000 opacity-0">
+                      A goDev nasceu do espirito e da vontade de empreender dos estudantes de computação da 
+                      Universidade Federal Rural do Semiárido, e de levar vocês em uma jornada pensada para 
+                      conduzir suas mentes em um processo de construção visual e tecnológica, dentro do espectro 
+                      do desenvolvimento digital. Os olhos estão abrindo, e a você não vai querer perder esse nascimento.
+                  </p>
                 </div>
-                <div className="flex items-center justify-center">
+                <div id="image-block" className="flex items-center justify-center 
+                transition-opacity delay-[0.5s] lg:delay-[1.5s] ease-out duration-1000 opacity-0">
                   {/*<img src="./assets/fontImage.png" width={400} alt=""/>*/}
                   <img src="./assets/cabeca.png" width={400} className="lg:h-[659px] lg:w-[755px] -z-10 lg:absolute" alt="" />
                 </div>
               </div>
             </div>
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </main>
 
