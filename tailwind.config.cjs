@@ -7,10 +7,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor:{
+        'card': 'linear-gradient(180deg, #AA27A6 -6.99%, #2B93E8 93.01%);',
       },
       backgroundImage:{
         'primaryGradient':'linear-gradient(288.73deg, rgba(106, 1, 255, 0.2) 4.9%, rgba(0, 0, 0, 0.2) 50.72%, rgba(106, 1, 255, 0.2) 96.55%), radial-gradient(50% 50% at 50% 50%, #19003C 15%, #010001 85%)',
-        'textGradient':'linear-gradient(89.88deg, #D30490 1.78%, #00B8FF 99.87%);'
+        'textGradient':'linear-gradient(89.88deg, #D30490 1.78%, #00B8FF 99.87%);',
+        'cardGradient':'linear-gradient(180deg, #AA27A6 -6.99%, #2B93E8 93.01%);',
+      },
+      stroke:{
+        'primaryGradient':'linear-gradient(288.73deg, rgba(106, 1, 255, 0.2) 4.9%, rgba(0, 0, 0, 0.2) 50.72%, rgba(106, 1, 255, 0.2) 96.55%), radial-gradient(50% 50% at 50% 50%, #19003C 15%, #010001 85%)',
+      },
+      borderColor:{
+        'cardGradient':'linear-gradient(180deg, #AA27A6 , #2B93E8);',
       },
       animation: {
         fade: 'fadeOut 5s ease-out',
