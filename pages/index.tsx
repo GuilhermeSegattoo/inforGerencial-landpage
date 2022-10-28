@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35}/>}/>
             <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35}/>}/>
             <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35}/>}/>
-            <Card title='Exclusividade' text='Praticidade para tirar o seu projeto do papel' icon={<FaBurn size={35}/>}/>
+            <Card title='Exclusividade' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<FaBurn size={35}/>}/>
             <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<HiOutlineBadgeCheck size={35}/>}/>
             <Card title='Automação' text='Tecnologias para diferenciar sua empresa, e conectar-se cada vez mais com seus clientes' icon={<TbMessageCircle size={35}/>}/>
           </div>
