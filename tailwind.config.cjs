@@ -29,6 +29,13 @@ module.exports = {
           '100%': { opacity:1 },
         },
       }),
+      screens:{
+        'cel':'360px',
+        'tab':'768px',
+        'lap':'1024px',
+        'desk':'1280px',
+        'xl':'1536px',
+      }
     },
   },
   plugins: [],
