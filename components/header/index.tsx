@@ -9,7 +9,7 @@ export const Header = () => {
                 </div>
                 <ul className="flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex  ">
                     <a href="">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5" href="#sobre">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5">
                             <span>Início</span>
                         </li>
                     </a>
@@ -30,7 +30,7 @@ export const Header = () => {
                     </a>
                 </ul>
                 <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
-                    <Button text="Entre em contato" height="h-7" />
+                    <Button text="Entre em contato" height="h-7" onClick={() => {}} />
                 </div>
             </section>
         </nav>
