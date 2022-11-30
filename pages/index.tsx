@@ -27,13 +27,13 @@ const Home: NextPage = () => {
           <div className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 mt-20 container mx-auto items-center justify-center'>
             <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
               <div className='relative h-[300px] w-[300px]'>
-                <img className='absolute bottom-0 right-0 z-50 floating' width={180} src='./assets/astroneer/astroneer.svg'/>
+                <img className='absolute bottom-0 right-0 z-30 floating' width={180} src='./assets/astroneer/astroneer.svg'/>
                 <img className='absolute top-0 left-0 z-20 spin' width={300} src='./assets/astroneer/planets.svg'/>
                 <img className='absolute top-0 left-0 z-10 spin' width={300} src='./assets/astroneer/smoke.svg'/>
                 <img className='absolute top-0 left-0 z-0 pulse' width={300} src='./assets/astroneer/stars.svg'/>
               </div>
             </div>
-            <div className='text-white text-center items-center flex flex-col'>
+            <div className='text-white text-center items-center flex flex-col z-50'>
               <p className='text-6xl cel:text-4xl cel:mt-14 tab:text-5xl lap:text-6xl bg-textGradient bg-clip-text text-transparent font-bold mt-28'>Acelere seu <br/>desenvolvimento</p>
               <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 text-slate-100'>
                 Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia.
