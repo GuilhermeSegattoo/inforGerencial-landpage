@@ -9,22 +9,22 @@ export const Header = () => {
                 </div>
                 <ul className="flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex  ">
                     <a href="">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal link-underline p-5" href="#sobre">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5" href="#sobre">
                             <span>Início</span>
                         </li>
                     </a>
                     <a href="#sobre">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal link-underline p-5">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5">
                             <span>Sobre</span>
                         </li>
                     </a>
                     <a>
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal link-underline p-5">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5">
                             Nossa solução
                         </li>
                     </a>
                     <a>
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal link-underline p-5">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-5">
                             <span>Tecnologias</span>
                         </li>
                     </a>

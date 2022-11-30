@@ -26,17 +26,30 @@ const Home: NextPage = () => {
           <Header />
           <div className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 mt-20 container mx-auto items-center justify-center'>
             <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
-              <img  src="./assets/astronauta.svg" alt=""/>
+              <div className='relative h-[300px] w-[300px]'>
+                <img className='absolute bottom-0 right-0 z-50 floating' width={180} src='./assets/astroneer/astroneer.svg'/>
+                <img className='absolute top-0 left-0 z-20 spin' width={300} src='./assets/astroneer/planets.svg'/>
+                <img className='absolute top-0 left-0 z-10 spin' width={300} src='./assets/astroneer/smoke.svg'/>
+                <img className='absolute top-0 left-0 z-0 pulse' width={300} src='./assets/astroneer/stars.svg'/>
+              </div>
             </div>
             <div className='text-white text-center items-center flex flex-col'>
               <p className='text-6xl cel:text-4xl cel:mt-14 tab:text-5xl lap:text-6xl bg-textGradient bg-clip-text text-transparent font-bold mt-28'>Acelere seu <br/>desenvolvimento</p>
-              <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4'>Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia.</p>
+              <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 text-slate-100'>
+                Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia.
+              </p>
               <div className='mt-8'>
                 <Button onClick={()=>{}} bold={true} textSize="text-lg" text="Construa seu projeto" width='w-[300px]' height='h-10'/>
               </div>
             </div>
             <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto '>
-              <img src="./assets/nave.svg" alt="" />
+              <div className='relative h-[300px] w-[300px]'>
+                <img className='absolute bottom-0 left-0 z-50 floating ' style={{animationDuration:"15s"}} width={180} src='./assets/rocket/rocket.svg'/>
+                <img className='absolute top-10 left-0 z-30 floating ' style={{animationDuration:"40s"}} width={180} src='./assets/rocket/planets.svg'/>
+                <img className='absolute top-0 left-10 z-20 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/starts1.svg'/>
+                <img className='absolute top-0 left-0 z-20 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/starts2.svg'/>
+                <img className='absolute top-0 right-0 z-10 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/meteorites.svg'/>
+              </div>
             </div>
           </div> 
           <div className='flex flex-col items-center justify-center text-center mt-44 cel:mt-32 mb-12'>
