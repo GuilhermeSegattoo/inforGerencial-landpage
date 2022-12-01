@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       <main className='relative overflow-x-hidden'>
         <div className="flex flex-col w-full h-full">
           <Header />
-          <div className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 mt-20 container mx-auto items-center justify-center'>
+          <section className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 mt-20 container mx-auto items-center justify-center'>
             <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
               <div className='relative h-[300px] w-[300px]'>
                 <img className='absolute bottom-0 right-0 z-30 floating' width={180} src='./assets/astroneer/astroneer.svg'/>
@@ -48,29 +48,30 @@ const Home: NextPage = () => {
                 <img className='absolute top-10 left-0 z-30 floating ' style={{animationDuration:"40s"}} width={180} src='./assets/rocket/planets.svg'/>
                 <img className='absolute top-0 left-10 z-20 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/starts1.svg'/>
                 <img className='absolute top-0 left-0 z-20 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/starts2.svg'/>
-                <img className='absolute top-0 right-0 z-10 pulse ' style={{animationDelay:"5s"}} width={300} src='./assets/rocket/meteorites.svg'/>
               </div>
             </div>
-          </div> 
-          <div className='flex flex-col items-center justify-center text-center mt-44 cel:mt-32 mb-12'>
-              <div className='flex items-center justify-center'>
-                <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700"/>
-                <p id="sobre" className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>goDev</p>
-                <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700"/>
-              </div>
-              <div className='text-white flex flex-col justify-center items-center'>
-                <p className='text-3xl cel:text-2xl'>Como funciona a plataforma</p>
-                <p className='text-xl cel:text-base'>Com a GoDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</p>
-              </div>
-          </div>
-          <div className='grid cel:grid-cols-1 tab:grid-cols-2 lap:grid-cols-3 gap-4 w-fit mb-5 container mx-auto'>
-            <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35}/>}/>
-            <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35}/>}/>
-            <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35}/>}/>
-            <Card title='Exclusividade' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<FaBurn size={35}/>}/>
-            <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<HiOutlineBadgeCheck size={35}/>}/>
-            <Card title='Automação' text='Tecnologias para diferenciar sua empresa, e conectar-se cada vez mais com seus clientes' icon={<TbMessageCircle size={35}/>}/>
-          </div>
+          </section> 
+          <section className='bg-black/25 mt-44 flex flex-col'>
+            <div className='flex flex-col items-center justify-center text-center mt-16 mb-12'>
+                <div className='flex items-center justify-center'>
+                  <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700"/>
+                  <p id="sobre" className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>goDev</p>
+                  <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700"/>
+                </div>
+                <div className='text-white flex flex-col justify-center items-center'>
+                  <p className='text-3xl cel:text-2xl'>Como funciona a plataforma</p>
+                  <p className='text-xl cel:text-base'>Com a GoDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</p>
+                </div>
+            </div>
+            <div className='grid cel:grid-cols-1 tab:grid-cols-2 lap:grid-cols-3 gap-4 w-fit mb-5 mx-auto'>
+              <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35}/>}/>
+              <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35}/>}/>
+              <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35}/>}/>
+              <Card title='Exclusividade' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<FaBurn size={35}/>}/>
+              <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<HiOutlineBadgeCheck size={35}/>}/>
+              <Card title='Automação' text='Tecnologias para diferenciar sua empresa, e conectar-se cada vez mais com seus clientes' icon={<TbMessageCircle size={35}/>}/>
+            </div>
+          </section>
         </div>
       </main>
       
