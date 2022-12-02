@@ -188,7 +188,7 @@ const Home: NextPage = () => {
                   </div>
                   <div className='px-5'>
                     <div className='flex items-end full'>
-                      <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-24 border-2 p-3' />
+                      <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-40 border-2 p-3' />
                       <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Tecnologias</label>
                     </div>
 
@@ -199,7 +199,58 @@ const Home: NextPage = () => {
             </div>
           </section>
 
+          <section className='pb-20 pt-10 flex w-full justify-center px-80'>
+            <div className='grid grid-cols-2 gap-10'>
+              <div className='flex flex-col items-center gap-4'>
+                <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
+                <span className='text-white text-center'>Preencha o formulário abaixo e entre em contato com o nosso time comercial.</span>
+                <form className='flex flex-col'>
+                  <div className='flex gap-3'>
+                    <div className='flex flex-col'>
+                      <label className='text-white'>Nome</label>
+                      <input type="text" className='bg-white rounded w-44 p-1' />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='text-white'>Sobrenome`</label>
+                      <input type="text" className='bg-white rounded w-44 p-1' />
+                    </div>                  
+                  </div>
+                  <div className='flex gap-3'>
+                    <div>
+                      <label className='text-white'>E-mail corporativo*</label>
+                      <input type="text" className='bg-white rounded w-44 p-1' />
+                    </div>
+                    <div className='flex justify-start items-end gap-3 w-full'>
+                      <div className='flex flex-col'>
+                        <label className='text-white'>celular</label>
+                        <input type="text" className='bg-white rounded p-1 w-16' />
+                      </div>  
+                      <input type="text" className='bg-white rounded w-24 p-1' />
+                    </div>                  
+                  </div>
+                  <div className='flex gap-3'>
+                    <div className='flex flex-col'>
+                      <label className='text-white'>Qual é o seu cargo?*</label>
+                      <input type="text" className='bg-white rounded w-44 p-1' />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='text-white'>Site da Empresa`</label>
+                      <input type="text" className='bg-white rounded w-44 p-1' />
+                    </div>                  
+                  </div>
 
+                  <div className='p-8'>
+                    <Button onClick={() => { }} bold={true} textSize="t  ext-lg" text="Fale com um Especialista" width='w-[300px]' height='h-10' />
+                  </div>
+                </form>
+              </div>
+             
+              <div>
+                <img src="assets/email.svg" width={300} alt="" />
+              </div>
+            </div>
+           
+          </section>
         </div>
       </main>
 
