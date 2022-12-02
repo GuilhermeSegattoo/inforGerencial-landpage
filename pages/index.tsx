@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       <main className='relative overflow-x-hidden'>
         <div className="flex flex-col w-full h-full">
           <Header />
-          
+
           <section className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 mt-20 container mx-auto items-center justify-center'>
             <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
               <div className='relative h-[300px] w-[300px]'>
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
               <h3 className='text-white font-bold text-4xl'>A goDev tira seu projeto do papel com os seguintes passos:</h3>
               <div className='flex flex-col justify-end w-72'>
                 <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
-                <span className='text-slate-200'>Os quatro E's da goDev</span>
+                <span className='text-slate-200'>Os quatro E`s da goDev</span>
               </div>
             </div>
 
@@ -159,7 +159,7 @@ const Home: NextPage = () => {
               <h3 className='text-white font-bold text-4xl'>Calculando orçamento<span className='text-[#D30490]'>.</span></h3>
             </div>
 
-            <div className='px-10 my-16 grid grid-cols-2 '>
+            <div className='px-10 my-16 grid grid-cols-2'>
 
               <div className='flex items-center gap-10'>
                 <div className='text-white'>
@@ -198,6 +198,8 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
+
+
         </div>
       </main>
 
