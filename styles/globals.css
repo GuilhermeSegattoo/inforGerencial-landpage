@@ -11,7 +11,29 @@ body {
     height : 100%;
     @apply bg-primaryGradient;
 }
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray black;
+}
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 3px;
+  height: 3px;
+  
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient( #5b21b6 , #5b21b6 );
