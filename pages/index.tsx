@@ -68,8 +68,8 @@ const Home: NextPage = () => {
                 <p className='text-xl cel:text-base'>Com a GoDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</p>
               </div>
             </div>
-            <div className='w-full h-[500px]'>
-              <div className='grid cel:grid-cols-1 tab:grid-cols-2 lap:grid-cols-3 gap-4 w-fit mb-5 mx-auto absolute left-1/2 -translate-x-1/2'>
+            <div className='w-full'>
+              <div className='grid cel:grid-cols-1 tab:grid-cols-2 lap:grid-cols-3 gap-4 w-fit mb-5 mx-auto'>
                 <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35} />} />
                 <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35} />} />
                 <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35} />} />
@@ -79,15 +79,13 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-
-          <section className='bg-black pt-48 pb-20 flex flex-col w-full justify-center px-80'>
-            <div className='container mx-auto flex flex-col mt-10'>
-              <div className='flex'>
+          <section className='bg-black pt-48 pb-20 flex flex-col w-full justify-center items-center'>
+            <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
+              <div className='flex text-center lg:text-start'>
                 <p className='text-white font-bold text-4xl'>Tire sua ideia do papel e transforme em lucro <span className='text-[#D30490]'>.</span></p>
-                <img className='top-0 right-0 h-14' src='assets/icon.png' />
+                <img className='hidden sm:hidden lg:block top-0 right-0 h-14' src='assets/icon.png' />
               </div>
-
-              <div className='p-10 grid grid-cols-2 gap-2'>
+              <div className='p-10 grid grid-cols-1 lg:grid-cols-2 gap-2'>
                 <div className='flex flex-col gap-2'>
                   <span className='font-bold text-[#D30490] text-3xl'>+426,9 <span className='text-white'>bi</span></span>
                   <hr className="w-20 border-2 rounded bg-white mt-2 mb-2" />
@@ -102,109 +100,110 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className='py-16 flex flex-col w-full justify-center px-80'>
-            <div className='flex'>
-              <h3 className='text-white font-bold text-4xl'>A goDev tira seu projeto do papel com os seguintes passos:</h3>
-              <div className='flex flex-col justify-end w-72'>
-                <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
-                <span className='text-slate-200'>Os quatro E`s da goDev</span>
+          <section className='py-16 flex flex-col w-full justify-center items-center'>
+            <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
+              <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
+                <h3 className='text-white font-bold text-4xl'>A goDev tira seu projeto do papel com os seguintes passos:</h3>
+                <div className='flex flex-col justify-end w-72 items-center lg:items-start'>
+                  <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
+                  <span className='text-slate-200'>Os quatro E`s da goDev</span>
+                </div>
+              </div>
+              <div className='p-10 my-16 grid grid-cols-1 lg:grid-cols-2 gap-16'>
+                <div className='flex flex-col items-center gap-2'>
+                  <div className='relative'>
+                    <img src='assets/planets/neptune.svg' />
+                    <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>1</span>
+                  </div>
+                  <span className='font-bold text-white text-2xl'>Entrevista</span>
+                  <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
+                  <p className='text-slate-100 text-center px-10'> Aqui entendemos o seu negócio e a sua ideia, para executar da melhor forma de acordo com sua expectativa.</p>
+                </div>
+
+                <div className='flex flex-col items-center gap-2'>
+                  <div className='relative'>
+                    <img src='assets/planets/mars.svg' />
+                    <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>2</span>
+                  </div>
+                  <span className='font-bold text-white text-2xl'>Equipes</span>
+                  <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
+                  <p className='text-slate-100 text-center px-10'>Organização da equipe com profissionais especializados na sua necessidade para desenvolver seu projeto.</p>
+                </div>
+
+                <div className='flex flex-col items-center gap-2'>
+                  <div className='relative'>
+                    <img src='assets/planets/jupiter.svg' />
+                    <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>3</span>
+                  </div>
+                  <span className='font-bold text-white text-2xl'>Execução</span>
+                  <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
+                  <p className='text-slate-100 text-center px-10'>Equipe atuando exclusivamente em seu projeto, com garantia de sigilo e qualidade entregue pela goDev.</p>
+                </div>
+
+                <div className='flex flex-col items-center gap-2'>
+                  <div className='relative'>
+                    <img src='assets/planets/saturn.svg' />
+                    <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>4</span>
+                  </div>
+                  <span className='font-bold text-white text-2xl'>Entrega</span>
+                  <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
+                  <p className='text-slate-100 text-center px-10'>Entrega do projeto totalmente funcional, sendo liberado para uso e seus clientes se conectarem o mais rápido possível.</p>
+                </div>
               </div>
             </div>
-
-            <div className='p-10 my-16 grid grid-cols-2 gap-16'>
-              <div className='flex flex-col items-center gap-2'>
-                <div className='relative'>
-                  <img src='assets/planets/neptune.svg' />
-                  <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>1</span>
-                </div>
-                <span className='font-bold text-white text-2xl'>Entrevista</span>
-                <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
-                <p className='text-slate-100 text-center px-10'> Aqui entendemos o seu negócio e a sua ideia, para executar da melhor forma de acordo com sua expectativa.</p>
+          </section>
+          <section className='py-10 flex flex-col w-full justify-center items-center'>
+            <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
+              <div className='flex justify-center lg:justify-start'>
+                <h3 className='text-white font-bold text-4xl'>Calculando orçamento<span className='text-[#D30490]'>.</span></h3>
               </div>
 
-              <div className='flex flex-col items-center gap-2'>
-                <div className='relative'>
-                  <img src='assets/planets/mars.svg' />
-                  <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>2</span>
+              <div className='px-10 my-16 grid grid-cols-1 lg:grid-cols-2'>
+                <div className='flex items-center gap-10 flex-col lg:flex-row'>
+                  <div className='text-white'>
+                    <h2 className='font-bold text-3xl'>R$ 0,00 /hora</h2>
+                    <span>O valor por hora</span>
+                  </div>
+                  <div className='w-44 h-0.5 lg:w-0.5 rounded lg:h-44 bg-blue-600 mb-10 lg:mb-0'></div>
                 </div>
-                <span className='font-bold text-white text-2xl'>Equipes</span>
-                <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
-                <p className='text-slate-100 text-center px-10'>Organização da equipe com profissionais especializados na sua necessidade para desenvolver seu projeto.</p>
-              </div>
 
-              <div className='flex flex-col items-center gap-2'>
-                <div className='relative'>
-                  <img src='assets/planets/jupiter.svg' />
-                  <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>3</span>
-                </div>
-                <span className='font-bold text-white text-2xl'>Execução</span>
-                <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
-                <p className='text-slate-100 text-center px-10'>Equipe atuando exclusivamente em seu projeto, com garantia de sigilo e qualidade entregue pela goDev.</p>
-              </div>
+                <div>
+                  <form className="flex flex-col gap-10">
+                    <div className='px-5'>
+                      <div className='flex items-end'>
+                        <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-24 border-2 p-3' />
+                        <label className='flex bg-[#D30490] justify-center text-base text-white font-semibold px-2 py-4 lg:px-2 whitespace-nowrap rounded-r w-full'>Quantidade de membros</label>
+                      </div>
+                      <span className='text-xs text-slate-200'>Quantos membros são necessários para o projeto?</span>
+                    </div>
+                    <div className='px-5'>
+                      <div className='flex items-end'>
+                        <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-24 border-2 p-3' />
+                        <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Duração do projeto</label>
+                      </div>
 
-              <div className='flex flex-col items-center gap-2'>
-                <div className='relative'>
-                  <img src='assets/planets/saturn.svg' />
-                  <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>4</span>
+                      <span className='text-xs text-slate-200'>Quantos meses precisa para o projeto ser feito?</span>
+                    </div>
+                    <div className='px-5'>
+                      <div className='flex items-end full'>
+                        <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-40 border-2 p-3' />
+                        <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Tecnologias</label>
+                      </div>
+
+                      <span className='text-xs text-slate-200'>Quais tecnologias serão usadas no projeto?</span>
+                    </div>
+                  </form>
                 </div>
-                <span className='font-bold text-white text-2xl'>Entrega</span>
-                <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
-                <p className='text-slate-100 text-center px-10'>Entrega do projeto totalmente funcional, sendo liberado para uso e seus clientes se conectarem o mais rápido possível.</p>
               </div>
             </div>
           </section>
 
-          <section className='pb-10 flex flex-col w-full justify-center px-80'>
-            <div className='flex'>
-              <h3 className='text-white font-bold text-4xl'>Calculando orçamento<span className='text-[#D30490]'>.</span></h3>
-            </div>
-
-            <div className='px-10 my-16 grid grid-cols-2'>
-
-              <div className='flex items-center gap-10'>
-                <div className='text-white'>
-                  <h2 className='font-bold text-3xl'>R$ 0,00 /hora</h2>
-                  <span>O valor por hora</span>
-                </div>
-                <div className='w-0.5 rounded h-44 bg-blue-600'></div>
-              </div>
-
-              <div>
-                <form className="flex flex-col gap-10">
-                  <div className='px-5'>
-                    <div className='flex items-end'>
-                      <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-24 border-2 p-3' />
-                      <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Quantidade de membros</label>
-                    </div>
-                    <span className='text-xs text-slate-200'>Quantos membros são necessários para o projeto?</span>
-                  </div>
-                  <div className='px-5'>
-                    <div className='flex items-end'>
-                      <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-24 border-2 p-3' />
-                      <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Duração do projeto</label>
-                    </div>
-
-                    <span className='text-xs text-slate-200'>Quantos meses precisa para o projeto ser feito?</span>
-                  </div>
-                  <div className='px-5'>
-                    <div className='flex items-end full'>
-                      <input type="number" className='text-xl text-white bg-black/5 border-[#D30490] rounded-l-lg w-40 border-2 p-3' />
-                      <label className='bg-[#D30490] text-base text-white font-semibold p-4 whitespace-nowrap rounded-r w-full'>Tecnologias</label>
-                    </div>
-
-                    <span className='text-xs text-slate-200'>Quais tecnologias serão usadas no projeto?</span>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </section>
-
-          <section className='pb-20 pt-10 flex w-full justify-center px-80'>
-            <div className='grid grid-cols-2 gap-10'>
+          <section className='pb-20 pt-10 flex w-full justify-center items-center'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 max-w-3xl'>
               <div className='flex flex-col items-center gap-4'>
                 <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
                 <span className='text-white text-center'>Preencha o formulário abaixo e entre em contato com o nosso time comercial.</span>
-                <form className='flex flex-col'>
+                <form className='flex flex-col justify-center items-center'>
                   <div className='flex gap-3'>
                     <div className='flex flex-col'>
                       <label className='text-white'>Nome</label>
@@ -213,20 +212,20 @@ const Home: NextPage = () => {
                     <div className='flex flex-col'>
                       <label className='text-white'>Sobrenome`</label>
                       <input type="text" className='bg-white rounded w-44 p-1' />
-                    </div>                  
+                    </div>
                   </div>
                   <div className='flex gap-3'>
-                    <div>
+                    <div className='flex flex-col'>
                       <label className='text-white'>E-mail corporativo*</label>
                       <input type="text" className='bg-white rounded w-44 p-1' />
                     </div>
-                    <div className='flex justify-start items-end gap-3 w-full'>
+                    <div className='flex justify-start items-end gap-3'>
                       <div className='flex flex-col'>
                         <label className='text-white'>celular</label>
                         <input type="text" className='bg-white rounded p-1 w-16' />
-                      </div>  
+                      </div>
                       <input type="text" className='bg-white rounded w-24 p-1' />
-                    </div>                  
+                    </div>
                   </div>
                   <div className='flex gap-3'>
                     <div className='flex flex-col'>
@@ -236,27 +235,27 @@ const Home: NextPage = () => {
                     <div className='flex flex-col'>
                       <label className='text-white'>Site da Empresa`</label>
                       <input type="text" className='bg-white rounded w-44 p-1' />
-                    </div>                  
+                    </div>
                   </div>
 
                   <div className='p-8'>
-                    <Button onClick={() => { }} bold={true} textSize="t  ext-lg" text="Fale com um Especialista" width='w-[300px]' height='h-10' />
+                    <Button onClick={() => { }} bold={true} textSize="text-lg" text="Fale com um Especialista" width='w-[300px]' height='h-10' />
                   </div>
                 </form>
               </div>
-             
-              <div>
-                <img src="assets/email.svg" width={300} alt="" />
+
+              <div className='flex justify-center items-center'>
+                <img src="assets/email.svg" width={325} alt="" />
               </div>
             </div>
-           
+
           </section>
         </div>
       </main>
 
       <footer className='bg-black min-h-[200px] py-10'>
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-3 px-20'>
+        <div className='container mx-auto justify-between'>
+          <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
             <div>
               <img src='assets/logo.png' />
             </div>
@@ -271,15 +270,27 @@ const Home: NextPage = () => {
                 <h4>Mossoró - RN</h4>
               </div>
               <div className='flex gap-2 text-lg'>
+              <div className='hover:text-[#D30490]'>
                 <FaGithub />
+                
+              </div>
+              <div className='hover:text-[#D30490]'>
+                
                 <FaLinkedin />
+                
+              </div>
+              <div className='hover:text-[#D30490]'>
+               
                 <FaInstagram />
+              </div>
               </div>
             </div>
             <div className='text-slate-400 text-sm flex flex-col gap-4'>
               <h2 className='text-2xl text-white'>Informações</h2>
               <div className=''>
-                <h4>Sobre</h4>
+                <a href="#sobre">
+                  Sobre
+                </a>
               </div>
               <div>
                 <h4>Contato</h4>
@@ -288,13 +299,14 @@ const Home: NextPage = () => {
                 <h4>Termos e Condições</h4>
               </div>
             </div>
+            
           </div>
-          <div className='inline-block text-white px-20 mt-5'>
-            <div className='flex gap-2 items-center text-sm text-slate-400'>
-              <RiCopyrightFill />
-              <span>Todos os direitos reservados.</span>
+          <div className='inline-block text-white'>
+              <div className='flex gap-2 justify-center text-sm text-slate-400'>
+                <RiCopyrightFill />
+                <span>Todos os direitos reservados.</span>
+              </div>
             </div>
-          </div>
         </div>
       </footer>
     </div>
