@@ -68,8 +68,8 @@ const Home: NextPage = () => {
                 <p className='text-xl cel:text-base'>Com a GoDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</p>
               </div>
             </div>
-            <div className='w-full'>
-              <div className='grid cel:grid-cols-1 tab:grid-cols-2 lap:grid-cols-3 gap-4 w-fit mb-5 mx-auto'>
+            <div className='flex w-full justify-center px-10 lg:p-0'>
+              <div className='flex gap-4 w-fit mb-5 max-w-4xl overflow-auto lg:grid lg:grid-cols-3'>
                 <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35} />} />
                 <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35} />} />
                 <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35} />} />
@@ -79,8 +79,8 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section className='bg-black pt-48 pb-20 flex flex-col w-full justify-center items-center'>
-            <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
+          <section className='bg-black pt-20 pb-20 flex flex-col w-full justify-center items-center'>
+            <div className='container mx-auto flex flex-col max-w-2xl'>
               <div className='flex text-center lg:text-start'>
                 <p className='text-white font-bold text-4xl'>Tire sua ideia do papel e transforme em lucro <span className='text-[#D30490]'>.</span></p>
                 <img className='hidden sm:hidden lg:block top-0 right-0 h-14' src='assets/icon.png' />
@@ -245,7 +245,14 @@ const Home: NextPage = () => {
               </div>
 
               <div className='flex justify-center items-center'>
-                <img src="assets/email.svg" width={325} alt="" />
+                <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
+                  <div className='relative h-80 w-80 '>
+                    <img className='absolute bottom-48 lg:bottom-24 lg:left-2 z-30 floating w-24 lg:w-40' src='./assets/rocket boy/Rocket.svg' />
+                    <img className='absolute top-0 rigth-20 z-20 ' width={300} src='./assets/rocket boy/Clouds.svg' />
+                    <img className='absolute top-0 left-0 z-0' width={300} src='./assets/rocket boy/stars.svg' />
+                    <img className='absolute top-0 left-0 z-20' width={300} src='./assets/rocket boy/CharacterBase.svg' />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -270,19 +277,19 @@ const Home: NextPage = () => {
                 <h4>Mossoró - RN</h4>
               </div>
               <div className='flex gap-2 text-lg'>
-              <div className='hover:text-[#D30490]'>
-                <FaGithub />
-                
-              </div>
-              <div className='hover:text-[#D30490]'>
-                
-                <FaLinkedin />
-                
-              </div>
-              <div className='hover:text-[#D30490]'>
-               
-                <FaInstagram />
-              </div>
+                <div className='hover:text-[#D30490]'>
+                  <FaGithub />
+
+                </div>
+                <div className='hover:text-[#D30490]'>
+
+                  <FaLinkedin />
+
+                </div>
+                <div className='hover:text-[#D30490]'>
+
+                  <FaInstagram />
+                </div>
               </div>
             </div>
             <div className='text-slate-400 text-sm flex flex-col gap-4'>
@@ -299,14 +306,14 @@ const Home: NextPage = () => {
                 <h4>Termos e Condições</h4>
               </div>
             </div>
-            
+
           </div>
           <div className='inline-block text-white'>
-              <div className='flex gap-2 justify-center text-sm text-slate-400'>
-                <RiCopyrightFill />
-                <span>Todos os direitos reservados.</span>
-              </div>
+            <div className='flex gap-2 justify-center text-sm text-slate-400'>
+              <RiCopyrightFill />
+              <span>Todos os direitos reservados.</span>
             </div>
+          </div>
         </div>
       </footer>
     </div>
