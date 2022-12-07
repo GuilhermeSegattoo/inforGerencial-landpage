@@ -7,10 +7,10 @@ export const Header = () => {
         setIsMenuOpen(false);
     }
     return (
-        <nav className="bg-black flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16">
+        <nav className="bg-black flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px]">
             <section className="container items-center flex cel:justify-center tab:justify-between lap:justify-between">
                 <div className="cel:flex cel:justify-center cel:items-center cel:text-center lap:">
-                    <img src="assets/logo.png" className="h-10" alt="" />
+                    <img src="assets/logo.png"  alt="" />
                 </div>
                 <ul className="flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex">
                     <a href="">
