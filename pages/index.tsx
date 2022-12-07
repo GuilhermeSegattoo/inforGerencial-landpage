@@ -249,7 +249,7 @@ const Home: NextPage = () => {
                   <div className='relative h-80 w-80 '>
                     <img className='absolute bottom-48 lg:bottom-24 lg:left-2 z-30 floating w-24 lg:w-40' src='./assets/rocket boy/Rocket.svg' />
                     <img className='absolute top-0 rigth-20 z-20 ' width={300} src='./assets/rocket boy/Clouds.svg' />
-                    <img className='absolute top-0 left-0 z-0' width={300} src='./assets/rocket boy/stars.svg' />
+                    <img className='absolute top-0 left-0 z-0' width={300} src='./assets/rocket boy/Stars.svg' />
                     <img className='absolute top-0 left-0 z-20' width={300} src='./assets/rocket boy/CharacterBase.svg' />
                   </div>
                 </div>

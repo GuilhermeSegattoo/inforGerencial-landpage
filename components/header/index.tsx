@@ -39,7 +39,7 @@ export const Header = () => {
                 </div>
             </section>
             <section className="lg:hidden">
-                <div className="text-[#D30490]" onClick={() => {setIsMenuOpen(!isMenuOpen)}}>
+                <div className="text-[#D30490] cursor-pointer" onClick={() => {setIsMenuOpen(!isMenuOpen)}}>
                     <GiHamburgerMenu />
                 </div>
             </section>
