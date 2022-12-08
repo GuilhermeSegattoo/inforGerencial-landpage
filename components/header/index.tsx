@@ -23,7 +23,7 @@ export const Header = () => {
                             <span>Sobre</span>
                         </li>
                     </a>
-                    <a>
+                    <a href="#solucao">
                         <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8">
                             Nossa solução
                         </li>
@@ -35,7 +35,9 @@ export const Header = () => {
                     </a>
                 </ul>
                 <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
-                    <Button text="Entre em contato" height="h-7" onClick={() => {}} />
+                    <a href="#contato">
+                        <Button text="Entre em contato" height="h-7"/>
+                    </a>
                 </div>
             </section>
             <section className="lg:hidden">

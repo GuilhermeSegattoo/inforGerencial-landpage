@@ -100,7 +100,7 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className='py-16 flex flex-col w-full justify-center items-center'>
+          <section id="solucao" className='py-16 flex flex-col w-full justify-center items-center'>
             <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
               <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
                 <h3 className='text-white font-bold text-4xl'>A goDev tira seu projeto do papel com os seguintes passos:</h3>
@@ -152,7 +152,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </section>
-          <section className='py-10 flex flex-col w-full justify-center items-center'>
+          {/* <section className='py-10 flex flex-col w-full justify-center items-center'>
             <div className='container mx-auto flex flex-col mt-10 max-w-2xl'>
               <div className='flex justify-center lg:justify-start'>
                 <h3 className='text-white font-bold text-4xl'>Calculando orçamento<span className='text-[#D30490]'>.</span></h3>
@@ -196,9 +196,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
-          <section className='pb-20 pt-10 flex w-full justify-center items-center'>
+          <section id="contato" className='pb-20 pt-10 flex w-full justify-center items-center'>
             <div className='grid grid-cols-1 lg:grid-cols-2 max-w-3xl'>
               <div className='flex flex-col items-center gap-4'>
                 <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
@@ -247,7 +247,9 @@ const Home: NextPage = () => {
               <div className='flex justify-center items-center'>
                 <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
                   <div className='relative h-80 w-80 '>
-                    <img className='absolute bottom-48 lg:bottom-24 lg:left-2 z-30 floating w-24 lg:w-40' src='./assets/rocket boy/Rocket.svg' />
+
+                    <img className='absolute bottom-44 lg:bottom-24 left-8 lg:left-10 z-30 w-24 lg:w-40' src='./assets/rocket boy/OnlySmoke.svg' />
+                    <img className='absolute bottom-[200px] lg:bottom-32 left-7 lg:left-14 z-30 floating h-36 lg:h-60' src='./assets/rocket boy/OnlyRocket.svg' />
                     <img className='absolute top-0 rigth-20 z-20 ' width={300} src='./assets/rocket boy/Clouds.svg' />
                     <img className='absolute top-0 left-0 z-0' width={300} src='./assets/rocket boy/Stars.svg' />
                     <img className='absolute top-0 left-0 z-20' width={300} src='./assets/rocket boy/CharacterBase.svg' />
@@ -260,7 +262,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className='bg-black min-h-[200px] py-10'>
+      <footer className='bg-black min-h-[200px] py-10 lg:px-2'>
         <div className='container mx-auto justify-between'>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
             <div>
@@ -269,26 +271,29 @@ const Home: NextPage = () => {
             <div className='text-slate-400 text-sm flex flex-col gap-4'>
               <h2 className='text-2xl text-white'>Contato</h2>
               <div className=''>
-                <h4>+55 84 99999-9999</h4>
-                <h4>emailGoDevAqui@gmail.com</h4>
+                <h4>+55 (84) 99939-8021</h4>
+                <h4>edson.alencar@alunos.ufersa.edu.br</h4>
               </div>
               <div>
-                <h4>Rua pipipipopo, 123 - Alto</h4>
-                <h4>Mossoró - RN</h4>
+                <h4>Rua Francisco Mota Bairro, 572 - Pres. Costa e Silva</h4>
+                <h4>Mossoró - RN, 59625-900</h4>
               </div>
               <div className='flex gap-2 text-lg'>
                 <div className='hover:text-[#D30490]'>
-                  <FaGithub />
-
+                  <a href="https://github.com/GoDev-Br" target="_blank" rel="noreferrer">
+                    <FaGithub />
+                  </a>
                 </div>
                 <div className='hover:text-[#D30490]'>
-
-                  <FaLinkedin />
-
+                  <a href="https://www.linkedin.com/company/godevcompany/about/" target="_blank" rel="noreferrer">
+                    <FaLinkedin />
+                  </a>
                 </div>
                 <div className='hover:text-[#D30490]'>
+                  <a href="https://www.instagram.com/godevofc/" target="_blank" rel="noreferrer">
+                    <FaInstagram />
+                  </a>
 
-                  <FaInstagram />
                 </div>
               </div>
             </div>
@@ -300,7 +305,9 @@ const Home: NextPage = () => {
                 </a>
               </div>
               <div>
-                <h4>Contato</h4>
+                <a href="#contato">
+                  <h4>Contato</h4>
+                </a>
               </div>
               <div className=''>
                 <h4>Termos e Condições</h4>
