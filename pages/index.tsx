@@ -197,7 +197,7 @@ const Home: NextPage = () => {
             </div>
           </section> */}
 
-                    <section id="contato" className='flex h-screen justify-center items-center'>
+                    <section id="contato" className='flex sm:h-screen justify-center items-center'>
                         <div className='grid grid-cols-1 lg:grid-cols-2 max-w-4xl'>
                             <div className='flex flex-col items-center gap-4'>
                                 <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
