@@ -9,7 +9,6 @@ import { IoNewspaperOutline, IoRocketOutline } from 'react-icons/io5';
 import { HiOutlineBriefcase, HiOutlineBadgeCheck, HiShieldCheck } from 'react-icons/hi';
 import { TbMessageCircle } from 'react-icons/tb';
 import { FaBurn, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai'
 import { RiCopyrightFill } from 'react-icons/ri'
 
 const Home: NextPage = () => {
@@ -25,8 +24,8 @@ const Home: NextPage = () => {
                 <div className="flex flex-col w-full h-full">
                     <Header />
 
-                    <section id="inicio" className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 pt-14 sm:pt-0 container mx-auto items-center justify-center h-screen'>
-                        <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
+                    <section id="inicio" className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 pt-16 pb-16 mx-auto my-10 items-center justify-center lg:h-screen'>
+                        <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto'>
                             <div className='relative h-[300px] w-[300px]'>
                                 <img className='absolute bottom-0 right-0 z-30 floating' width={180} src='./assets/astroneer/astroneer.svg' />
                                 <img className='absolute top-0 left-0 z-20 spin' width={300} src='./assets/astroneer/planets.svg' />
@@ -38,14 +37,14 @@ const Home: NextPage = () => {
                             <p className='text-6xl cel:text-4xl cel:mt-14 tab:text-5xl lap:text-6xl bg-textGradient bg-clip-text text-transparent font-bold mt-28'>
                                 <span>Acelere seu <br />desenvolvimento</span>
                             </p>
-                            <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 text-slate-100'>
+                            <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 px-2 text-slate-100'>
                                 Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia.
                             </p>
                             <div className='mt-8'>
-                                <Button onClick={() => { }} bold={true} textSize="t  ext-lg" text="Construa seu projeto" width='w-[300px]' height='h-10' />
+                                <Button onClick={() => { }} bold={true} textSize="text-lg" text="Construa seu projeto" width='w-[300px]' height='h-10' />
                             </div>
                         </div>
-                        <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto '>
+                        <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto'>
                             <div className='relative h-[300px] w-[300px]'>
                                 <img className='absolute bottom-0 left-0 z-50 floating ' style={{ animationDuration: "15s" }} width={180} src='./assets/rocket/rocket.svg' />
                                 <img className='absolute top-10 left-0 z-30 floating ' style={{ animationDuration: "40s" }} width={180} src='./assets/rocket/planets.svg' />
@@ -87,12 +86,12 @@ const Home: NextPage = () => {
                             <div className='p-10 grid grid-cols-1 lg:grid-cols-2 gap-2'>
                                 <div className='flex flex-col gap-2'>
                                     <span className='font-bold text-[#D30490] text-3xl'>+426,9 <span className='text-white'>bi</span></span>
-                                    <hr className="w-20 border-2 rounded bg-white mt-2 mb-2" />
+                                    <hr className="w-20 border-2 rounded bg-white"/>
                                     <p className='text-slate-100'>Faturamento anual em reais de empresas que têm sistemas tecnológicos</p>
                                 </div>
                                 <div className='flex flex-col gap-2'>
                                     <span className='font-bold text-[#D30490] text-3xl'>+174 <span className='text-white'>bi</span></span>
-                                    <hr className="w-20 border-2 rounded bg-white mt-2 mb-2" />
+                                    <hr className="w-20 border-2 rounded bg-white" />
                                     <p className='text-slate-100'>Aumento anual em reais para empresas que utilizam de sistemas online e aplicativos em seu negócio</p>
                                 </div>
                             </div>
@@ -112,7 +111,7 @@ const Home: NextPage = () => {
                                 <div className='flex flex-col items-center gap-2'>
                                     <div className='relative'>
                                         <img src='assets/planets/neptune.svg' />
-                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>1</span>
+                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 drop-shadow'>1</span>
                                     </div>
                                     <span className='font-bold text-white text-2xl'>Entrevista</span>
                                     <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
@@ -122,7 +121,7 @@ const Home: NextPage = () => {
                                 <div className='flex flex-col items-center gap-2'>
                                     <div className='relative'>
                                         <img src='assets/planets/mars.svg' />
-                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>2</span>
+                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 drop-shadow'>2</span>
                                     </div>
                                     <span className='font-bold text-white text-2xl'>Equipes</span>
                                     <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
@@ -132,7 +131,7 @@ const Home: NextPage = () => {
                                 <div className='flex flex-col items-center gap-2'>
                                     <div className='relative'>
                                         <img src='assets/planets/jupiter.svg' />
-                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>3</span>
+                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 drop-shadow'>3</span>
                                     </div>
                                     <span className='font-bold text-white text-2xl'>Execução</span>
                                     <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
@@ -142,7 +141,7 @@ const Home: NextPage = () => {
                                 <div className='flex flex-col items-center gap-2'>
                                     <div className='relative'>
                                         <img src='assets/planets/saturn.svg' />
-                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>4</span>
+                                        <span className='absolute text-white font-bold text-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 drop-shadow'>4</span>
                                     </div>
                                     <span className='font-bold text-white text-2xl'>Entrega</span>
                                     <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
@@ -197,7 +196,7 @@ const Home: NextPage = () => {
             </div>
           </section> */}
 
-                    <section id="contato" className='flex sm:h-screen justify-center items-center'>
+                    <section id="contato" className='flex lg:h-screen justify-center items-center'>
                         <div className='grid grid-cols-1 lg:grid-cols-2 max-w-4xl'>
                             <div className='flex flex-col items-center gap-4'>
                                 <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
@@ -209,7 +208,7 @@ const Home: NextPage = () => {
                                             <input type="text" className='bg-white rounded w-80 sm:w-44 p-1' />
                                         </div>
                                         <div className='flex flex-col'>
-                                            <label className='text-white'>Sobrenome`</label>
+                                            <label className='text-white'>Sobrenome</label>
                                             <input type="text" className='bg-white rounded w-80 sm:w-44 p-1' />
                                         </div>
                                     </div>
@@ -231,7 +230,7 @@ const Home: NextPage = () => {
                                             <input type="text" className='bg-white rounded w-80 sm:w-44 p-1' />
                                         </div>
                                         <div className='flex flex-col'>
-                                            <label className='text-white'>Site da Empresa`</label>
+                                            <label className='text-white'>Site da Empresa</label>
                                             <input type="text" className='bg-white rounded w-80 sm:w-44 p-1' />
                                         </div>
                                     </div>
@@ -244,8 +243,7 @@ const Home: NextPage = () => {
 
                             <div className='flex justify-center items-center'>
                                 <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto '>
-                                    <div className='relative h-80 w-80 '>
-
+                                    <div className='relative h-80 w-80'>
                                         <img className='absolute bottom-44 lg:bottom-24 left-8 lg:left-10 z-30 w-24 lg:w-40' src='./assets/rocket boy/OnlySmoke.svg' />
                                         <img className='absolute bottom-[200px] lg:bottom-32 left-7 lg:left-14 z-30 floating h-36 lg:h-60' src='./assets/rocket boy/OnlyRocket.svg' />
                                         <img className='absolute top-0 rigth-20 z-20 ' width={300} src='./assets/rocket boy/Clouds.svg' />
@@ -272,8 +270,8 @@ const Home: NextPage = () => {
                                 <a href="tel:+5584999398021">
                                     <h4>+55 (84) 99939-8021</h4>
                                 </a>
-                                <a href="mailto:edson.alencar@alunos.ufersa.edu.br">
-                                    <h4>edson.alencar@alunos.ufersa.edu.br</h4>
+                                <a href="mailto:atendimento@godevcompany.com.br">
+                                    <h4>atendimento@godevcompany.com.br</h4>
                                 </a>
                             </div>
                             <div>
@@ -318,7 +316,7 @@ const Home: NextPage = () => {
 
                     </div>
                     <div className='inline-block text-white'>
-                        <div className='flex gap-2 justify-center text-sm text-slate-400'>
+                        <div className='flex gap-2 justify-center items-center text-sm text-slate-400'>
                             <RiCopyrightFill />
                             <span>Todos os direitos reservados.</span>
                         </div>

@@ -14,35 +14,35 @@ export const Header = () => {
                 <div className="w-28 cel:flex cel:justify-center cel:items-center cel:text-center lap:">
                     <img src="assets/logo.svg"  alt="" />
                 </div>
-                <ul className="flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex">
+                <ul className="flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex justify-center items-center">
                     <a href="#inicio">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8 sm:p-5 lg:p-8">
                             <span>Início</span>
                         </li>
                     </a>
                     <a href="#sobre">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8 sm:p-5 lg:p-8">
                             <span>Sobre</span>
                         </li>
                     </a>
                     <a href="#solucao">
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8 sm:p-5 lg:p-8">
                             Nossa solução
                         </li>
                     </a>
                     <a>
-                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8">
+                        <li className="cursor-pointer text-slate-100 text-sm font-normal hover:text-white link-underline p-8 sm:p-5 lg:p-8">
                             <span>Tecnologias</span>
                         </li>
                     </a>
                 </ul>
                 <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
                     <a href="#contato">
-                        <Button text="Entre em contato" height="h-7"/>
+                        <Button text="Entre em contato" height="h-6" width="w-48"/>
                     </a>
                 </div>
             </section>
-            <section className="block lg:hidden">
+            <section className="block cel:inline-block tab:hidden lap:hidden xl:hidden">
                 <div className="text-[#D30490] cursor-pointer" onClick={() => {setIsMenuOpen(!isMenuOpen)}}>
                     <GiHamburgerMenu size={30} />
                 </div>
