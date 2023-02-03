@@ -89,12 +89,12 @@ const Home: NextPage = () => {
                         </div>
                         <div className='flex w-full justify-center px-10 lg:p-0'>
                             <div className='flex gap-x-11 gap-y-8 w-max p-2  mb-5 max-w-4xl overflow-auto lg:grid lg:grid-cols-3' tabIndex={0}>
-                                <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<IoRocketOutline size={35} />} />
-                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoNewspaperOutline size={35} />} />
-                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<HiOutlineBriefcase size={35} />} />
-                                <Card title='Negócios' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<HiOutlineBriefcase size={35} />} />
-                                <Card title='Transparência' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiOutlineBadgeCheck size={35} />} />
-                                <Card title='Sem Burocracias' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<TbMessageCircle size={35} />} />
+                            <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon=                   {<HiOutlineBriefcase size={35} />} />
+                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35} />} />
+                                <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35} />} />
+                                <Card title='Exclusividade' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<FaBurn size={35} />} />
+                                <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<HiOutlineBadgeCheck size={35} />} />
+                                <Card title='Automação' text='Tecnologias para diferenciar sua empresa, e conectar-se cada vez mais com seus clientes' icon={<TbMessageCircle size={35} />} />
                             </div>
                         </div>
                     </section>
