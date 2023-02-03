@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                                 <h1>Acelere seu <br /> desenvolvimento</h1>
                             </div>
                             <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 px-2 text-slate-100'>
-                                Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia.
+                                Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocracia.
                             </p>
                             <div className='mt-8'>
                                 <Button onClick={() => { }} bold={true} textSize="text-lg" text="Construa seu projeto" width='w-[300px]' height='h-10' />
@@ -67,10 +67,10 @@ const Home: NextPage = () => {
                         </div>
                         <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto'>
                             <div className='relative h-[300px] w-[300px]'>
-                                <img className='absolute bottom-0 left-0 z-50 floating ' style={{ animationDuration: "15s" }} width={180} src='./assets/rocket/rocket.svg' alt='foguete' />
-                                <img className='absolute top-10 left-0 z-30 floating ' style={{ animationDuration: "40s" }} width={180} src='./assets/rocket/planets.svg' alt='planeta' />
-                                <img className='absolute top-0 left-10 z-20 pulse ' style={{ animationDelay: "5s" }} width={300} src='./assets/rocket/starts1.svg' alt='estrela' />
-                                <img className='absolute top-0 left-0 z-20 pulse ' style={{ animationDelay: "5s" }} width={300} src='./assets/rocket/starts2.svg' alt='estrela' />
+                                <img className='absolute bottom-5 left-0 z-50 floating w-44 ' src='./assets/rocket/rocketWithFire.svg' alt='foguete' />
+                                <img className='absolute top-10 left-5 z-30 spin' src='./assets/rocket/planets.svg' alt='planeta' />
+                                <img className='absolute top-0 left-10 z-20 pulse ' style={{ animationDelay: "5s" }} src='./assets/rocket/starts1.svg' alt='estrela' />
+                                <img className='absolute top-0 left-0 z-20 pulse ' style={{ animationDelay: "5s" }} src='./assets/rocket/starts2.svg' alt='estrela' />
                             </div>
                         </div>
                     </section>
@@ -88,17 +88,17 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                         <div className='flex w-full justify-center px-10 lg:p-0'>
-                            <div className='flex gap-4 w-fit mb-5 max-w-4xl overflow-auto lg:grid lg:grid-cols-3' tabIndex={0}>
-                                <Card title='Burocracia' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<HiOutlineBriefcase size={35} />} />
-                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoRocketOutline size={35} />} />
-                                <Card title='Segurança' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiShieldCheck size={35} />} />
-                                <Card title='Exclusividade' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<FaBurn size={35} />} />
-                                <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<HiOutlineBadgeCheck size={35} />} />
-                                <Card title='Automação' text='Tecnologias para diferenciar sua empresa, e conectar-se cada vez mais com seus clientes' icon={<TbMessageCircle size={35} />} />
+                            <div className='flex gap-x-11 gap-y-8 w-max p-2  mb-5 max-w-4xl overflow-auto lg:grid lg:grid-cols-3' tabIndex={0}>
+                                <Card title='Especialistas' text='Equipes especializadas em diversos tipos de linguagem de programação' icon={<IoRocketOutline size={35} />} />
+                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<IoNewspaperOutline size={35} />} />
+                                <Card title='Praticidade' text='Praticidade para tirar o seu projeto do papel' icon={<HiOutlineBriefcase size={35} />} />
+                                <Card title='Negócios' text='Sua tecnologia de forma única e estruturada para o seu negócio' icon={<HiOutlineBriefcase size={35} />} />
+                                <Card title='Transparência' text='Transparência e confiança desde o desenvolvimento a entrega' icon={<HiOutlineBadgeCheck size={35} />} />
+                                <Card title='Sem Burocracias' text='Profissionais de TI disponível para sua empresa sem a burocracia de contratação' icon={<TbMessageCircle size={35} />} />
                             </div>
                         </div>
                     </section>
-                    <section className='bg-black flex flex-col h-screen justify-center items-center'>
+                    <section className=' bg-black/25 flex flex-col h-screen justify-center items-center'>
                         <div className='container mx-auto flex flex-col max-w-4xl'>
                             <div className='flex text-center lg:text-start'>
                                 <p className='text-white font-bold text-4xl px-6'>Tire sua ideia do papel e transforme em lucro<span className='text-[#D30490]'>.</span></p>
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
                         </div>
                     </section>
 
-                    <section id="solucao" className='flex flex-col justify-center items-center mb-10'>
+                    <section id="solucao" className=' bg-black/25 flex flex-col justify-center items-center mb-10'>
                         <div className='container mx-auto flex flex-col mt-20 max-w-4xl '>
                             <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
                                 <h2 className='text-white font-bold text-4xl p-4'>A goDev tira seu projeto do papel com os seguintes passos:</h2>
