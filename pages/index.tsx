@@ -15,24 +15,24 @@ const Home: NextPage = () => {
     return (
         <div className=''>
             <Head>
-                <title>goDev</title>
+                <title>GoDev</title>
 
                 <meta charSet="utf-8" />
-                <meta name="author" content="goDev" />
+                <meta name="author" content="GoDev" />
                 <meta name="keywords" content="sites, web, desenvolvimento, development" />
-                <meta name="description" content="Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia com a goDev. " />
+                <meta name="description" content="Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia com a GoDev. " />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="robots" content="index, follow, all" />
 
                 {/* open graph protocol tags */}
-                <meta property="og:title" content="goDev" />
+                <meta property="og:title" content="GoDev" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.godevcompany.com.br" />
                 <meta property="og:image" content="https://www.godevcompany.com.br/assets/icon.png" />
                 <meta property="og:image:secure_url" content="https://www.godevcompany.com.br/assets/icon.png" />
-                <meta property="og:image:alt" content="goDev logo image" />
-                <meta property="og:description" content="Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia com a goDev. " />
-                <meta property="og:site_name" content="goDev" />
+                <meta property="og:image:alt" content="GoDev logo image" />
+                <meta property="og:description" content="Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia com a GoDev. " />
+                <meta property="og:site_name" content="GoDev" />
                 <meta property="og:locale" content="pt_BR" />
 
 
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
                         <div className='flex flex-col items-center justify-center text-center mt-16 mb-12'>
                             <div className='flex items-center justify-center'>
                                 <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
-                                <p className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>goDev</p>
+                                <p className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>GoDev</p>
                                 <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
                             </div>
                             <div className='text-white flex flex-col justify-center items-center'>
@@ -122,10 +122,10 @@ const Home: NextPage = () => {
                     <section id="solucao" className=' bg-black/25 flex flex-col justify-center items-center mb-10'>
                         <div className='container mx-auto flex flex-col mt-20 max-w-4xl '>
                             <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
-                                <h2 className='text-white font-bold text-4xl p-4'>A goDev tira seu projeto do papel com os seguintes passos:</h2>
+                                <h2 className='text-white font-bold text-4xl p-4'>A GoDev tira seu projeto do papel com os seguintes passos:</h2>
                                 <div className='flex flex-col justify-end w-72 items-center lg:items-start'>
                                     <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
-                                    <span className='text-slate-200'>Os quatro E`s da goDev</span>
+                                    <span className='text-slate-200'>Os quatro E`s da GoDev</span>
                                 </div>
                             </div>
                             <div className='p-10 my-16 grid grid-cols-1 lg:grid-cols-2 gap-16'>
@@ -156,7 +156,7 @@ const Home: NextPage = () => {
                                     </div>
                                     <span className='font-bold text-white text-2xl'>Execução</span>
                                     <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
-                                    <p className='text-slate-100 text-center px-10'>Equipe atuando exclusivamente em seu projeto, com garantia de sigilo e qualidade entregue pela goDev.</p>
+                                    <p className='text-slate-100 text-center px-10'>Equipe atuando exclusivamente em seu projeto, com garantia de sigilo e qualidade entregue pela GoDev.</p>
                                 </div>
 
                                 <div className='flex flex-col items-center gap-2'>
