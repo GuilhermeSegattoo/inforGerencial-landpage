@@ -62,7 +62,9 @@ const Home: NextPage = () => {
                                 Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocracia.
                             </p>
                             <div className='mt-8'>
-                                <Button onClick={() => { }} bold={true} textSize="text-lg" text="Construa seu projeto" width='w-[300px]' height='h-10' />
+                                <Button onClick={() => { }} appendClassName='w-[300px] h-10' >
+                                    <span className='text-lg text-white font-bold'>Construa seu projeto</span>
+                                </Button>
                             </div>
                         </div>
                         <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto'>
@@ -257,7 +259,9 @@ const Home: NextPage = () => {
                                     </div>
 
                                     <div className='p-8'>
-                                        <Button onClick={() => { }} bold={true} textSize="text-lg" text="Fale com um Especialista" height='h-10' />
+                                        <Button onClick={() => { }} appendClassName="text-lg h-10">
+                                            <p className='text-white font-bold'>Fale com um Especialista</p>
+                                        </Button>
                                     </div>
                                 </form>
                             </div>

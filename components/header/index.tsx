@@ -38,7 +38,9 @@ export const Header = () => {
                 </ul>
                 <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
                     <a href="#contato">
-                        <Button text="Entre em contato" height="h-6" width="w-48"/>
+                        <Button appendClassName="h-6 w-48">
+                            <p className="text-white">Entre em contato</p>
+                        </Button>
                     </a>
                 </div>
             </section>
