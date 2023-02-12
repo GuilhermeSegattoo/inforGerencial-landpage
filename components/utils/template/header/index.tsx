@@ -1,4 +1,4 @@
-import { Button } from "../button";
+import { Button } from "../../button";
 import { GiHamburgerMenu } from "react-icons/gi"; 
 import { useEffect, useState } from "react";
 import { Nav } from "./nav";
