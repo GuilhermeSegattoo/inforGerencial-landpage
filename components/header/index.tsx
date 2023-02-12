@@ -9,7 +9,7 @@ export const Header = () => {
     }
     
     return (
-        <nav className="bg-black flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] fixed">
+        <nav className="bg-black bg-opacity-50 flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] fixed">
             <section role="menubar" aria-label="navigation menu bar"  className="container items-center flex cel:justify-center tab:justify-between lap:justify-between">
                 <div className="w-28 cel:flex cel:justify-center cel:items-center cel:text-center lap:">
                     <img src="assets/logo.svg"  alt="logo" />
