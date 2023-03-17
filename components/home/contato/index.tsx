@@ -3,7 +3,7 @@ import { Button } from "../../utils/button"
 export const Contato = () => {
     return (
         <section id="contato" className='flex lg:h-screen justify-center items-center'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 max-w-4xl'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 max-w-4xl mt-2' >
                 <div className='flex flex-col items-center gap-4'>
                     <h2 className='text-white text-3xl font-bold'>Agendar uma demo.</h2>
                     <span className='text-white text-center px-4'>Preencha o formulário abaixo e entre em contato com o nosso time comercial.</span>

@@ -4,8 +4,8 @@ import { RiCopyrightFill } from 'react-icons/ri'
 
 export const Footer = () => {
     return(
-        <footer className='bg-black min-h-[200px] py-10 px-4 sm:px-2'>
-            <div className='container mx-auto justify-center sm:justify-between'>
+        <footer className='bg-black min-h-[200px] py-8 px-4 sm:px-2'>
+            <div className='container mx-auto sm:justify-between'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
                     <div className='w-32'>
                         <img src='assets/logo.svg' alt='logo da godev' />
