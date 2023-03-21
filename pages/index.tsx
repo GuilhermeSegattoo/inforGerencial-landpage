@@ -5,17 +5,14 @@ import { Sobre } from '../components/home/sobre';
 import { Solucao } from '../components/home/solucao';
 import { Contato } from '../components/home/contato';
 import { Template } from '../components/utils/template';
-import { Mercado } from '../components/home/mercado';
 
 const Home: NextPage = () => {
     return (
         <Template>
             {/* Secctions da landpage */}
             <Inicio/>
-            <Sobre/>
-            <Mercado/>
-            <Solucao/>
-            {/* <Calculadora/>*/}
+            <Sobre/>            
+            <Solucao/>            
             <Contato/>
         </Template>
     )
