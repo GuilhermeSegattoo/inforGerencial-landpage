@@ -2,34 +2,27 @@ import { Button } from "../../utils/button"
 
 export const Inicio = () => {
     return (
-        <section id="inicio" role="contentinfo" aria-labelledby='inicio' className='grid cel:grid-cols-1 tab:grid-cols-1 lap:grid-cols-3 pt-16 pb-16 mx-auto my-10 items-center justify-center lg:h-screen'>
-            <div className='flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto'>
-                <div className='relative h-[300px] w-[300px]'>
-                    <img className='absolute bottom-0 right-0 z-30 floating' width={180} src='./assets/astroneer/astroneer.svg' alt='astronauta' />
-                    <img className='absolute top-0 left-0 z-20 spin' width={300} src='./assets/astroneer/planets.svg' alt='planetas' />
-                    <img className='absolute top-0 left-0 z-10 spin' width={300} src='./assets/astroneer/smoke.svg' alt='fumaça' />
-                    <img className='absolute top-0 left-0 z-0 pulse' width={300} src='./assets/astroneer/stars.svg' alt='estrelas' />
+        <section id="inicio" role="contentinfo" aria-labelledby='inicio' className='flex py-8 lap:mx-10 desk:mx-6 my-10 w-screen items-center justify-around lg:h-screen'>            
+          
+            <div className='grid grid-cols-1 text-white cel:pb-0 cel:mb-0 lap:text-start tab:text-center cel:text-center items-center flex-wrap justify-center z-50'>
+                <div className='cel:text-4xl cel:mt-10 tab:text-4xl lap:text-5xl  text-transparent font-bold mt-28 flex justify-center lap:justify-start'>
+                    <h1 className="bg-textGradient bg-clip-text">Acelere seu <br /> desenvolvimento</h1>
                 </div>
-            </div>
-            <div className='text-white text-center items-center flex flex-col z-50'>
-                <div className='text-6xl cel:text-4xl cel:mt-14 tab:text-5xl lap:text-6xl bg-textGradient bg-clip-text text-transparent font-bold mt-28'>
-                    <h1>Acelere seu <br /> desenvolvimento</h1>
-                </div>
-                <p className='text-2xl cel:text-lg tab:text-xl lap:text-2xl mt-4 px-2 text-slate-100'>
+                
+                <p className='cel:text-lg tab:text-lg lap:text-xl desk:text-2xl mt-4 text-slate-100'>
                     Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocracia.
                 </p>
-                <div className='mt-8'>
+                <div className='mt-8 flex cel:justify-center tab:justify-center lap:justify-start'>
                     <Button onClick={() => { }} appendClassName='w-[300px] h-10' >
                         <span className='text-lg text-white font-bold'>Construa seu projeto</span>
                     </Button>
                 </div>
             </div>
-            <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block justify-center lap:w-auto'>
-                <div className='relative h-[300px] w-[300px]'>
+            <div className='flex cel:hidden tab:hidden lap:inline-block xl:inline-block lap:auto'>
+                <div className='relative h-[350px] w-[400px] xl:ml-80'>
                     <img className='absolute bottom-5 left-0 z-50 floating w-44 ' src='./assets/rocket/rocketWithFire.svg' alt='foguete' />
                     <img className='absolute top-10 left-5 z-30 spin' src='./assets/rocket/planets.svg' alt='planeta' />
-                    <img className='absolute top-0 left-10 z-20 pulse ' style={{ animationDelay: "5s" }} src='./assets/rocket/starts1.svg' alt='estrela' />
-                    <img className='absolute top-0 left-0 z-20 pulse ' style={{ animationDelay: "5s" }} src='./assets/rocket/starts2.svg' alt='estrela' />
+                    <img className='absolute top-0 left-0 z-20 pulse ' style={{ animationDelay: "5s" }} src='./assets/rocket/starts1.svg' alt='estrela' />
                 </div>
             </div>
         </section>

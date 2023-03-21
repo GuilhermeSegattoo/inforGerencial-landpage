@@ -1,6 +1,6 @@
 export const Solucao = () => {
     return (
-        <section id="solucao" className=' bg-black/25 flex flex-col justify-center items-center mb-10'>
+        <section id="solucao" className=' bg-black/25 flex flex-col justify-center items-center mb-1'>
             <div className='container mx-auto flex flex-col mt-20 max-w-4xl '>
                 <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
                     <h2 className='text-white font-bold text-4xl p-4'>A GoDev tira seu projeto do papel com os seguintes passos:</h2>

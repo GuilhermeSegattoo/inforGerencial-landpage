@@ -7,7 +7,7 @@ import { Card } from "../../utils/card"
 export const Sobre = () => {
     return (
         <section id="sobre" role="grid" aria-labelledby='sobre' className='bg-black/25 flex flex-col h-screen sm:h-auto'>
-            <div className='flex flex-col items-center justify-center text-center mt-16 mb-12'>
+            <div className='flex flex-col items-center justify-center text-center mt-12 mb-12'>
                 <div className='flex items-center justify-center'>
                     <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
                     <p className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>GoDev</p>

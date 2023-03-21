@@ -2,7 +2,6 @@
 import type { NextPage } from 'next';
 import { Contato } from '../components/home/contato';
 import { Inicio } from '../components/home/inicio';
-import { Mercado } from '../components/home/mercado';
 import { PassoAPasso } from '../components/home/passo_a_passo';
 import { QuemSomos } from '../components/home/quem_somos';
 import { Sobre } from '../components/home/sobre';
@@ -16,10 +15,8 @@ const Home: NextPage = () => {
             <Inicio/>
             <QuemSomos/>
             <PassoAPasso/>
-            <Sobre/>
-            <Mercado/>
-            <Solucao/>
-            {/* <Calculadora/>*/}
+            <Sobre/>            
+            <Solucao/>            
             <Contato/>
         </Template>
     )
