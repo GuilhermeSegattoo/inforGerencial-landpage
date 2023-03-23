@@ -6,7 +6,7 @@ import { Step } from "../../utils/step"
 export const PassoAPasso = () => {
   return (
     <section id="passo_a_passo" role="grid" aria-labelledby='passo_a_passo' className='bg-black/25 flex flex-col items-center h-auto'>
-      <h2 className="text-white text-center font-bold text-4xl p-4 mt-14">A GoDev tira seu projeto do papel</h2>
+      <h2 className="text-white text-center font-bold text-4xl p-4 mt-14 max-w-2xl">A GoDev tira seu projeto do papel com os seguintes passos:</h2>
       <div className="flex flex-col items-center mt-10 mx-10 md:mx-20 lg:mx-44 divide-y divide-slate-600 max-w-6xl">
         <Step 
           icon={<MdGroup/>} 

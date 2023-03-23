@@ -2,12 +2,8 @@ export const Solucao = () => {
     return (
         <section id="solucao" className=' bg-black/25 flex flex-col justify-center items-center mb-1'>
             <div className='container mx-auto flex flex-col mt-20 max-w-4xl '>
-                <div className='flex text-center lg:text-start flex-col lg:flex-row items-center'>
-                    <h2 className='text-white font-bold text-4xl p-4'>A GoDev tira seu projeto do papel com os seguintes passos:</h2>
-                    <div className='flex flex-col justify-end w-72 items-center lg:items-start'>
-                        <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
-                        <span className='text-slate-200'>Os quatro E`s da GoDev</span>
-                    </div>
+                <div className='flex justify-center lg:text-start lg:flex-row items-center'>
+                    <h2 className='text-white font-bold text-4xl p-4'>Os quatro E`s da GoDev</h2>
                 </div>
                 <div className='p-10 my-16 grid grid-cols-1 lg:grid-cols-2 gap-16'>
                     <div className='flex flex-col items-center gap-2'>

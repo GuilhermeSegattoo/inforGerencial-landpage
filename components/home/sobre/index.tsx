@@ -14,8 +14,7 @@ export const Sobre = () => {
                     <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
                 </div>
                 <div className='text-white flex flex-col justify-center items-center'>
-                    <h2 className='text-3xl cel:text-2xl'>Como funciona a plataforma</h2>
-                    <h3 className='text-xl cel:text-base'>Com a GoDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</h3>
+                    <h2 className='text-3xl cel:text-2xl'>Conheça alguns benefícios da nossa solução!</h2>
                 </div>
             </div>
             <div className='flex w-full justify-center px-10 lg:p-0'>
