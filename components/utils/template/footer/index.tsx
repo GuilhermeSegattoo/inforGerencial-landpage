@@ -7,8 +7,8 @@ export const Footer = () => {
         <footer className='bg-black min-h-[200px] py-8 px-4 sm:px-2'>
             <div className='container mx-auto sm:justify-between'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
-                    <div className='w-32'>
-                        <img src='assets/logo.svg' alt='logo da godev' />
+                    <div className='w-64'>
+                        <img src='assets/logo.svg' alt='logo da godevcompany' />
                     </div>
                     <div className='text-slate-400 text-sm flex flex-col gap-4'>
                         <h2 className='text-2xl text-white'>Contato</h2>
