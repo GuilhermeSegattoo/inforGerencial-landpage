@@ -10,12 +10,12 @@ export const Sobre = () => {
             <div className='flex flex-col items-center justify-center text-center mt-12 mb-12'>
                 <div className='flex items-center justify-center'>
                     <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
-                    <p className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>LeaDevCompany</p>
+                    <p className='bg-textGradient bg-clip-text text-clip text-transparent font-bold text-4xl mx-4 pb-2'>LeaDev</p>
                     <hr className="my-8 w-72 h-px bg-gray-200 border-0 dark:bg-blue-700" />
                 </div>
                 <div className='text-white flex flex-col justify-center items-center'>
                     <h2 className='text-3xl cel:text-2xl'>Como funciona a plataforma</h2>
-                    <h3 className='text-xl cel:text-base'>Com a LeaDevCompany, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</h3>
+                    <h3 className='text-xl cel:text-base'>Com a LeaDev, é possível tirar suas ideias do papel. Conheça alguns benefícios da nossa solução!</h3>
                 </div>
             </div>
             <div className='flex w-full justify-center px-10 lg:p-0'>
