@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {FaFacebook,FaInstagram,FaGithub,FaCopyright, FaLinkedin} from 'react-icons/fa'
+import { FaCopyright, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { RiCopyrightFill } from 'react-icons/ri'
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className='container mx-auto sm:justify-between'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
                     <div className='w-64'>
-                        <img src='assets/logo.svg' alt='logo da godevcompany' />
+                        <img src='assets/logo.svg' alt='logo da leadevcompany' />
                     </div>
                     <div className='text-slate-400 text-sm flex flex-col gap-4'>
                         <h2 className='text-2xl text-white'>Contato</h2>
@@ -16,9 +16,9 @@ export const Footer = () => {
                             <a href="tel:+5584999398021">
                                 <h3>+55 (84) 99939-8021</h3>
                             </a>
-                            <a href="mailto:atendimento@godevcompany.com.br">
+                            {/* <a href="mailto:atendimento@godevcompany.com.br">
                                 <h3>atendimento@godevcompany.com.br</h3>
-                            </a>
+                            </a> */}
                         </div>
                         <div>
                             <h4>Rua Francisco Mota Bairro, 572 - Pres. Costa e Silva</h4>
@@ -31,12 +31,12 @@ export const Footer = () => {
                                 </a>
                             </div>
                             <div className='hover:text-[#D30490]'>
-                                <a href="https://www.linkedin.com/company/godevcompany/about/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Linkedin'>
+                                <a href="https://www.linkedin.com/company/leadevoficial/about/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Linkedin'>
                                     <FaLinkedin />
                                 </a>
                             </div>
                             <div className='hover:text-[#D30490]'>
-                                <a href="https://www.instagram.com/godevofc/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Instagram'>
+                                <a href="https://www.instagram.com/leadevoficial/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Instagram'>
                                     <FaInstagram />
                                 </a>
 
