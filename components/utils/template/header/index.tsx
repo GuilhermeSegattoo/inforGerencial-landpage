@@ -1,28 +1,26 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "../../button";
 import { Nav } from "./nav";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [rollBar, setRollBar] = useState<boolean>(false);
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
   return (
-    <nav
-      className={`flex items-center justify-center cel:px-5 px-14 
-                        w-full z-[99] shadow h-16 lg:h-[85px] 
-                        bg-black transition-all duration-100 fixed bg-opacity-80`}
-    >
+    <nav className="flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] bg-black transition-all duration-100 fixed bg-opacity-80">
       <section
         role="menubar"
         aria-label="navigation menu bar"
         className="container items-center flex cel:justify-center tab:justify-between lap:justify-between"
       >
-        <div className="w-52 cel:flex cel:justify-center cel:items-center cel:text-center lap:">
-          <img src="assets/logo.svg" alt="logo" />
-        </div>
+        <a href="#inicio">
+          <div className="w-52 cel:flex cel:justify-center cel:items-center cel:text-center lap:">
+            <img src="assets/logo.svg" alt="logo" />
+          </div>
+        </a>
+
         <Nav />
         <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
           <a href="#contato">
