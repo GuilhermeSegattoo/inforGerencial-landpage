@@ -8,8 +8,9 @@ export const Footer = () => {
       <div className="container mx-auto sm:justify-between">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-5">
           <a href="#inicio">
-            <div className="w-64">
-              <img src="assets/logo.svg" alt="logo da leadevcompany" />
+            <div className="w-16 flex items-center gap-2">
+              <img src="assets/logo-icon.svg" alt="logo" />
+              <h2 className="text-white text-3xl">LeadDev</h2>
             </div>
           </a>
 

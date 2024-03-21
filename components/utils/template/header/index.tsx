@@ -16,8 +16,9 @@ export const Header = () => {
         className="container items-center flex cel:justify-center tab:justify-between lap:justify-between"
       >
         <a href="#inicio">
-          <div className="w-52 cel:flex cel:justify-center cel:items-center cel:text-center lap:">
-            <img src="assets/logo.svg" alt="logo" />
+          <div className="w-14 flex items-center gap-2">
+            <img src="assets/logo-icon.svg" alt="logo" />
+            <h2 className="text-white text-3xl">LeadDev</h2>
           </div>
         </a>
 
