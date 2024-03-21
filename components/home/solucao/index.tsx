@@ -7,11 +7,11 @@ export const Solucao = () => {
       <div className="container mx-auto flex flex-col mt-20 max-w-4xl ">
         <div className="flex text-center lg:text-start flex-col lg:flex-row items-center">
           <h2 className="text-white font-bold text-4xl p-4">
-            A LeaDev tira seu projeto do papel com os seguintes passos:
+            A LeadDev tira seu projeto do papel com os seguintes passos:
           </h2>
           <div className="flex flex-col justify-end w-72 items-center lg:items-start">
             <hr className="border-blue-800 w-20 border-1 rounded bg-white mt-2 mb-2" />
-            <span className="text-slate-200">Os quatro E`s da LeaDev</span>
+            <span className="text-slate-200">Os quatro E`s da LeadDev</span>
           </div>
         </div>
         <div className="p-10 my-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -57,7 +57,7 @@ export const Solucao = () => {
             <hr className="w-20 border-1 rounded border-blue-800 mt-2 mb-2" />
             <p className="text-slate-100 text-center px-10">
               Equipe atuando exclusivamente em seu projeto, com garantia de
-              sigilo e qualidade entregue pela LeaDev.
+              sigilo e qualidade entregue pela LeadDev.
             </p>
           </div>
 

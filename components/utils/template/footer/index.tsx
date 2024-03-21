@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className='container mx-auto sm:justify-between'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-5'>
                     <div className='w-64'>
-                        <img src='assets/logo.svg' alt='logo da leadevcompany' />
+                        <img src='assets/logo.svg' alt='logo da LeadDevcompany' />
                     </div>
                     <div className='text-slate-400 text-sm flex flex-col gap-4'>
                         <h2 className='text-2xl text-white'>Contato</h2>
@@ -31,12 +31,12 @@ export const Footer = () => {
                                 </a>
                             </div>
                             <div className='hover:text-[#D30490]'>
-                                <a href="https://www.linkedin.com/company/leadevoficial/about/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Linkedin'>
+                                <a href="https://www.linkedin.com/company/LeadDevoficial/about/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Linkedin'>
                                     <FaLinkedin />
                                 </a>
                             </div>
                             <div className='hover:text-[#D30490]'>
-                                <a href="https://www.instagram.com/leadevoficial/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Instagram'>
+                                <a href="https://www.instagram.com/LeadDevoficial/" target="_blank" rel="noreferrer" aria-label='Link para Nosso Instagram'>
                                     <FaInstagram />
                                 </a>
 
