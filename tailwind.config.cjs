@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        inforColor: "#4A7EDC",
+      },
       backgroundColor:{
         'card': 'linear-gradient(180deg, #AA27A6 -6.99%, #2B93E8 93.01%);',
       },

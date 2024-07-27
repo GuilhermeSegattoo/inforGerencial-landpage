@@ -1,6 +1,8 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Button } from "../../utils/button";
-import InputMask from "react-input-mask";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 interface FormInputs {
   name: string;
@@ -9,21 +11,37 @@ interface FormInputs {
 }
 
 export const Contato = () => {
-  const { register, handleSubmit } = useForm<FormInputs>();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormInputs>();
 
-  const onSubmit: SubmitHandler<FormInputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<FormInputs> = async (data) => {
+    try {
+      const response = await axios.post("https://api.web3forms.com/submit", {
+        access_key: "a80ec0d9-ec01-41c9-ad8d-f0a130686be5",
+        ...data,
+      });
+
+      if (response.status === 200) {
+        toast.success("Formulário enviado com sucesso!");
+        reset();  // Reseta os campos do formulário
+      } else {
+        toast.error("Erro ao enviar o formulário");
+      }
+    } catch (error) {
+      toast.error("Erro ao enviar o formulário");
+      console.error("Erro ao enviar o formulário", error);
+    }
+  };
 
   return (
     <section
       id="contato"
-      className="flex lg:h-screen justify-center items-center"
+      className="flex lg:h-screen justify-center items-center bg-inforColor"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-4xl mt-2">
         <div className="flex flex-col items-center gap-4">
-          <h2 className="text-white text-3xl font-bold">Agendar uma demo.</h2>
+          <h2 className="text-white text-3xl font-bold">Agendar uma demonstração</h2>
           <span className="text-white text-center px-4">
-            Preencha o formulário abaixo e entre em contato com o nosso time
-            comercial.
+            Preencha o formulário abaixo e entraremos em contato com você em 24h.
           </span>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -36,11 +54,12 @@ export const Contato = () => {
               <input
                 id="name"
                 type="text"
-                {...register("name", { required: true })}
-                className="bg-white rounded  p-1"
+                {...register("name", { required: "Nome é obrigatório" })}
+                className="bg-white rounded p-1"
               />
+              {errors.name && <span className="text-red-500">{errors.name.message}</span>}
             </div>
-            <div className="flex flex-col col-span-full ">
+            <div className="flex flex-col col-span-full">
               <label htmlFor="email" className="text-white">
                 Email
               </label>
@@ -48,34 +67,40 @@ export const Contato = () => {
                 id="email"
                 type="email"
                 placeholder="contato@email.com"
-                {...register("email", { required: true })}
-                className="bg-white rounded  p-1"
+                {...register("email", { required: "Email é obrigatório" })}
+                className="bg-white rounded p-1"
               />
+              {errors.email && <span className="text-red-500">{errors.email.message}</span>}
             </div>
 
             <div className="flex flex-col col-span-full">
               <label htmlFor="phone" className="text-white">
-                celular
+                Celular
               </label>
-              <InputMask
+              <input
                 id="phone"
                 type="text"
-                className="bg-white rounded  p-1"
-                placeholder="(99) 99999-9999"
-                mask="(99) 99999-9999"
-                maskChar={null}
-                {...register("phone", { required: true })}
+                className="bg-white rounded p-1"
+                placeholder="(xx) xxxx-xxxx"
+                {...register("phone", {
+                  required: "Celular é obrigatório",
+                  pattern: {
+                    value: /^\(\d{2}\) \d{5}-\d{4}$/,
+                    message: "Formato inválido. Use (xx) xxxx-xxxx"
+                  }
+                })}
               />
+              {errors.phone && <span className="text-red-500">{errors.phone.message}</span>}
             </div>
 
             <Button type="submit" appendClassName="text-lg h-10 mt-3">
-              <p className="text-white font-bold">Fale com um Especialista</p>
+              <p className="text-inforColor font-bold">Fale com um Especialista</p>
             </Button>
           </form>
         </div>
 
         <div className="flex justify-center items-center mt-16 lg:mt-0">
-          <div className="flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto ">
+          <div className="flex cel:w-48 tab:w-48 lap:w-auto xl:w-auto cel:mx-auto">
             <div className="relative h-80 w-80">
               <img
                 className="absolute bottom-44 lg:bottom-24 left-8 lg:left-10 z-30 w-24 lg:w-40"
@@ -88,7 +113,7 @@ export const Contato = () => {
                 alt="foguete"
               />
               <img
-                className="absolute top-0 rigth-20 z-20 "
+                className="absolute top-0 right-20 z-20"
                 width={300}
                 src="./assets/rocket_boy/Clouds.svg"
                 alt="nuvens"
@@ -109,6 +134,7 @@ export const Contato = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

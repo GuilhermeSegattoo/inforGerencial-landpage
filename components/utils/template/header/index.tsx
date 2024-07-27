@@ -9,24 +9,24 @@ export const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] bg-black transition-all duration-100 fixed bg-opacity-80">
+    <nav className="flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] bg-blue-800 transition-all duration-100 fixed bg-opacity-80">
       <section
         role="menubar"
         aria-label="navigation menu bar"
         className="container items-center flex cel:justify-center tab:justify-between lap:justify-between"
       >
         <a href="#inicio">
-          <div className="w-14 flex items-center gap-2">
-            <img src="assets/logo-icon.svg" alt="logo" />
-            <h2 className="text-white text-3xl">LeadDev</h2>
+          <div className="w-14 flex items-center gap-2 bg-white">
+          <h2 className="text-inforColor text-2xl">Infor </h2>
+            <h2 className="text-white text-2xl">Gerencial</h2>
           </div>
         </a>
 
         <Nav />
         <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
-          <a href="#contato">
-            <Button appendClassName="h-6 w-48">
-              <p className="text-white">Entre em contato</p>
+          <a href="https://www.inforgerencial.com.br">
+            <Button appendClassName="h-10 w-30">
+              <h1 className="text-blue-800 text-xl">Acessar</h1>
             </Button>
           </a>
         </div>
@@ -37,7 +37,7 @@ export const Header = () => {
         className="block cel:inline-block tab:hidden lap:hidden xl:hidden"
       >
         <div
-          className="text-[#D30490] cursor-pointer"
+          className="text-inforColor cursor-pointer"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
           }}

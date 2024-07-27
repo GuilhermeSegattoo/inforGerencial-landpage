@@ -8,7 +8,7 @@ export const Button = ({appendClassName,children, ...rest}: ButtonProps) => {
     return (
         <button 
             className={`cursor-pointer flex rounded p-4 text-center justify-center items-center
-            bg-violet-800 hover:bg-violet-900 ${appendClassName}`} 
+            bg-white text-blue-800 hover:bg-blue-300 ${appendClassName}`} 
             {...rest}
         >
             {children}
