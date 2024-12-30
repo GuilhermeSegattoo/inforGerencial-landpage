@@ -9,10 +9,10 @@ interface Props {
 export const Nav = ({mode = "normal", onClick} : Props) => {
 
     const map : Array<{text : string, href : string}> = [
-        {text : "Inicio"       , href : "#inicio"},
-        {text : "Sobre"        , href : "#sobre"},
+        {text : "Home"       , href : "#home"},
+        {text : "Recursos"        , href : "#sobre"},
         {text : "Preços", href : "#solucao"},
-        {text : "Contato"  , href : "#contato"}
+        {text : "FAQ"  , href : "#contato"}
     ]
     
     return (
@@ -20,7 +20,7 @@ export const Nav = ({mode = "normal", onClick} : Props) => {
             <ul className={
                 clsx("", {
                     "flex xl:gap-16 tab:gap-4 cel:hidden tab:inline-flex lap:inline-flex xl:inline-flex justify-center items-center" : mode == "normal",
-                    "flex flex-col text-1xl" : mode == "tel"
+                    "flex flex-col text-3xl" : mode == "tel"
                 })
             }>
                 {map.map(({text, href}, _) => 

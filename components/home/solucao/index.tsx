@@ -13,7 +13,7 @@ const PlanCard: React.FC<PlanProps> = ({ title, price, features, buttonText, but
   return (
     <div className={`w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 ${containerStyle}`}>
       <h2 className='text-2xl font-bold text-center py-8'>{title}</h2>
-      <p className='text-center text-4xl font-bold'>{price}</p>
+      
       <div className='text-center font-medium'>
         {features.map((feature, index) => (
           <p key={index} className='py-2 border-b mx-8 mt-8'>{feature}</p>
@@ -36,18 +36,18 @@ const PlansSection: React.FC = () => {
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-10'>
         <PlanCard
           title="Demonstrativo de lentes"
-          price="$60/mês"
+          price="$xx/mês"
           features={["Fotossensível", "Transitions", "Tratamentos", "Ambientes", "Comparativos"]}
-          buttonText="Solicitar Agora"
+          buttonText="Solicitar Demo"
           buttonStyle="bg-inforColor text-white"
           containerStyle="bg-white"
         />
 
         <PlanCard
           title="Sistema Completo"
-          price="$120/mês"
+          price="$xx/mês"
           features={["Notas Fiscais", "Cadastros", "Financeiro", "Estoque", "Boletos", "Crediário", "Controle de OS", "Status do pedido", "E muito mais!"]}
-          buttonText="Solicitar Agora!"
+          buttonText="Solicitar Demo!"
           buttonStyle="bg-inforColor text-white"
           containerStyle="bg-gray-100"
         />
@@ -56,7 +56,7 @@ const PlansSection: React.FC = () => {
           title="Adicionais"
           price="+$40/Plano"
           features={["Automação com WhatsApp", "Emissão de boletos", "Demonstrativo de lentes"]}
-          buttonText="Solicitar Agora"
+          buttonText="Solicitar Demo"
           buttonStyle="bg-inforColor text-white"
         />
       </div>

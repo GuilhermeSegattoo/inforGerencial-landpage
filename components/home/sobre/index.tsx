@@ -25,7 +25,7 @@ export const Sobre = () => {
           </h3>
         </div>
       </div>
-      <div className="bg-inforColor flex w-full justify-center px-10 lg:p-0 ">
+      <div className="bg-white flex w-full justify-center px-10 lg:p-0 ">
         <div
           className="flex gap-x-6 gap-y-6 w-full p-5  mb-5 max-w-4xl overflow-auto lg:grid lg:grid-cols-3"
           tabIndex={0}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button } from "../../button";
 import { Nav } from "./nav";
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => {
@@ -9,47 +10,50 @@ export const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-center cel:px-5 px-14 w-full z-[99] shadow h-16 lg:h-[85px] bg-blue-800 transition-all duration-100 fixed bg-opacity-80">
+    <nav className="flex items-center justify-between px-14 w-full z-[99] shadow h-16 lg:h-[85px] bg-blue-800 transition-all duration-100 fixed bg-opacity-80">
       <section
         role="menubar"
         aria-label="navigation menu bar"
-        className="container items-center flex cel:justify-center tab:justify-between lap:justify-between"
+        className="container items-center flex justify-between"
       >
+        {/* Logo */}
         <a href="#inicio">
-          <div className="w-14 flex items-center gap-2 bg-white">
-          <h2 className="text-inforColor text-2xl">Infor </h2>
-            <h2 className="text-white text-2xl">Gerencial</h2>
+          <div className="flex items-center gap-2 cursor-pointer py-2 px-4 rounded-md">
+            <h2 className="text-white text-2xl font-bold">Infor</h2>
+            <h2 className="text-white text-2xl font-bold">Gerencial</h2>
           </div>
         </a>
 
-        <Nav />
-        <div className="cel:hidden tab:inline-block lap:inline-block xl:inline-block">
+        {/* Menu de Navegação Desktop */}
+        <div className="hidden md:flex items-center gap-8">
+          <Nav />
           <a href="https://www.inforgerencial.com.br">
-            <Button appendClassName="h-10 w-30">
-              <h1 className="text-blue-800 text-xl">Acessar</h1>
+            <Button appendClassName="h-10 px-8 bg-white text-blue-800 font-semibold">
+              Começar Agora
             </Button>
           </a>
         </div>
-      </section>
-      <section
-        role="menu"
-        aria-label="navigation menu button"
-        className="block cel:inline-block tab:hidden lap:hidden xl:hidden"
-      >
-        <div
-          className="text-inforColor cursor-pointer"
-          onClick={() => {
-            setIsMenuOpen(!isMenuOpen);
-          }}
-        >
-          <GiHamburgerMenu size={30} />
-        </div>
 
-        {isMenuOpen && (
-          <div className="lg:hidden bg-black absolute top-16 left-0 w-full flex flex-col items-center justify-center ">
-            <Nav mode="tel" onClick={() => closeMenu()} />
+        {/* Menu Mobile */}
+        <section
+          role="menu"
+          aria-label="navigation menu button"
+          className="block md:hidden"
+        >
+          <div
+            className="text-white cursor-pointer"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <GiHamburgerMenu size={30} />
           </div>
-        )}
+
+          {/* Menu responsivo */}
+          {isMenuOpen && (
+            <div className="bg-black absolute top-16 left-0 w-full flex flex-col items-center justify-center">
+              <Nav mode="tel" onClick={() => closeMenu()} />
+            </div>
+          )}
+        </section>
       </section>
     </nav>
   );

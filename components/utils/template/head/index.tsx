@@ -19,12 +19,9 @@ export const CustomHead = () => {
             <meta property="og:image" content="https://www.godevcompany.com.br/assets/icon.png" />
             <meta property="og:image:secure_url" content="https://www.godevcompany.com.br/assets/icon.png" />
             <meta property="og:image:alt" content="LeadDev logo image" />
-            <meta property="og:description" content="Construa a tecnologia do seu negócio com rapidez, qualidade e sem burocrácia com a LeadDev. " />
-            <meta property="og:site_name" content="LeadDev" />
-            <meta property="og:locale" content="pt_BR" />
+        
 
-
-            <link rel="canonical" href="https://www.godevcompany.com.br" key="canonical" />
+          
 
             <link rel="icon" href="./assets/icon.jpg" />
         </Head>

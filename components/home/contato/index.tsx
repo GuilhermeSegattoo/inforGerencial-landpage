@@ -35,7 +35,7 @@ export const Contato = () => {
   return (
     <section
       id="contato"
-      className="flex lg:h-screen justify-center items-center bg-inforColor"
+      className="flex lg:h-screen justify-center items-center bg-blue-800"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-4xl mt-2">
         <div className="flex flex-col items-center gap-4">
