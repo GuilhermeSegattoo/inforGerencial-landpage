@@ -6,6 +6,7 @@ import { Contato } from "../components/home/contato";
 import { Inicio } from "../components/home/inicio";
 import { PassoAPasso } from "../components/home/passo_a_passo";
 import { Template } from "../components/utils/template";
+import { FAQ } from "../components/home/FAQ/Faq";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Sobre />
       <Solucao />
       <PassoAPasso />
+      <FAQ />
       <Contato />
     </Template>
   );

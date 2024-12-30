@@ -12,7 +12,8 @@ export const Nav = ({mode = "normal", onClick} : Props) => {
         {text : "Home"       , href : "#home"},
         {text : "Recursos"        , href : "#sobre"},
         {text : "Preços", href : "#solucao"},
-        {text : "FAQ"  , href : "#contato"}
+        {text : "Contato" , href : "#contato"},
+        {text : "FAQ"  , href : "#faq"}
     ]
     
     return (
